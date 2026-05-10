@@ -2,14 +2,12 @@
 
 A fully functional, browser-based two-player chess game built with pure HTML, CSS, and JavaScript — no frameworks, no backend, no dependencies.
 
-**Course:** CSE 106 – Fundamentals of Web Design  
-**Student:** Falgun Kishore Sharma | SAU/FET/DBM(CSE)/2025/026
 
 ---
 
 ## Live Demo
 
-Deployed on GitHub Pages: `https://<your-username>.github.io/<repo-name>/`
+Deployed on GitHub Pages: `https://falgunkishore.github.io/2-Player-Chess/`
 
 ---
 
