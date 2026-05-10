@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>♟️ 2 Player Chess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-body fade-in">
+  <div class="background-animation"></div>
+  
+  <div class="landing-container">
+    <h1 class="landing-title">♟️ 2 Player Chess</h1>
+    
+    <div class="setup-card">
+      <div class="input-group">
+        <label for="player1">Player 1 Name</label>
+        <input type="text" id="player1" placeholder="Enter name..." autocomplete="off">
+        
+        <div class="color-selection">
+          <label class="radio-label">
+            <input type="radio" name="p1color" value="white" checked>
+            <span class="custom-radio white-radio"></span>
+            Play as White
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="p1color" value="black">
+            <span class="custom-radio black-radio"></span>
+            Play as Black
+          </label>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="input-group">
+        <label for="player2">Player 2 Name</label>
+        <input type="text" id="player2" placeholder="Enter name..." autocomplete="off">
+        <div class="auto-color-display" id="p2ColorDisplay">
+          Assigned to: <strong>Black</strong>
+        </div>
+      </div>
+
+      <button id="startGameBtn" class="start-btn">Start Game</button>
+      <div id="errorMsg" class="error-msg"></div>
+    </div>
+  </div>
+
+  <script src="landing.js"></script>
+</body>
+</html>

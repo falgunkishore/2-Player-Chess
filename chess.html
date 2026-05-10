@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="game-body fade-in">
+
+    <h2 class="game-title">♟ Two Player Chess</h2>
+
+    <div class="game-layout">
+
+        <div class="board-area">
+            <div class="player-profile top-profile">
+                <div class="player-avatar">♟️</div>
+                <div class="player-info-container">
+                    <div class="player-name" id="blackPlayerDisplay">Player 2</div>
+                    <div id="whiteCaptured" class="captured-pieces"></div>
+                </div>
+            </div>
+
+
+            <div id="board"></div>
+
+            <div class="player-profile bottom-profile">
+                <div class="player-avatar">♙</div>
+                <div class="player-info-container">
+                    <div class="player-name" id="whitePlayerDisplay">Player 1</div>
+                    <div id="blackCaptured" class="captured-pieces"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-area">
+            <div class="sidebar-section moves-section">
+                <h2>Move History</h2>
+                <div id="moveList"></div>
+            </div>
+
+            <div class="sidebar-section controls-section">
+                <div id="checkWarning" class="check-warning hidden">⚠️ CHECK!</div>
+                <h2 id="turnDisplay">Turn: White</h2>
+                <button onclick="resetGame()" class="action-btn start-btn">New Game</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="gameOverModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2 id="gameOverTitle">Checkmate!</h2>
+            <p id="gameOverMessage">White wins.</p>
+            <button onclick="closeModalAndReset()" class="action-btn start-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
