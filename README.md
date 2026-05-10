@@ -61,14 +61,6 @@ No build step or server required. Just open the file:
 
 ---
 
-## How to Deploy on GitHub Pages
-
-1. Push the repository to GitHub
-2. Go to **Settings → Pages**
-3. Set source to the `main` branch, root folder (`/`)
-4. Save — your site will be live at `https://<username>.github.io/<repo-name>/`
-
----
 
 ## Tech Stack
 
